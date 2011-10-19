@@ -437,7 +437,9 @@ class SyntaxAnalyser:
         if self.peek() == Tokens.NUMERAL:
             self.match(Tokens.NUMERAL)
         elif self.peek() == Tokens.ID:
-            self.match(Tokens.ID)        
+            self.match(Tokens.ID) 
+	else:
+	    self.syntax_error("Numeral or ID")       
         
 
 
