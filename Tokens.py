@@ -9,7 +9,7 @@ E-MAILS:        alu0100220919@alumnado.ull.es
                 alu0100247671@alumnado.ull.es
                 alu0100226300@alumnado.ull.es
 ASIGNATURA:     Compiladores
-DESCRIPCION:    Practica 3
+DESCRIPCION:    Practica 5
                 Diseño e implementacion de un analizador lexico para PASCAL-
 COMENTARIOS:    
 *************************************************************************** """
