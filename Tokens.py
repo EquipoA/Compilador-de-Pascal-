@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-""" **************************************************************************
-FICHERO:        Tokens.py
+""" *************************************************************************
+FICHERO:        T.py
 FECHA:          02.10.2011
 AUTORES:        Marcelino Aitor Concepcion Barandela
                 Andres Gonzalez Placeres
@@ -14,7 +14,7 @@ DESCRIPCION:    Practica 3
 COMENTARIOS:    
 *************************************************************************** """
 
-class Tokens:
+class T:
 
     # Lista de tokens del lenguaje.    
     token_names = [
@@ -73,69 +73,69 @@ class Tokens:
     @staticmethod
     def load():
         
-        if not Tokens.loaded:
+        if not T.loaded:
             index = 0
             
-            for s in Tokens.token_names:
-                Tokens.name_to_id[s] = index
-                Tokens.id_to_name[index] = s
+            for s in T.token_names:
+                T.name_to_id[s] = index
+                T.id_to_name[index] = s
                 index += 1
                 
-            Tokens.loaded = True
+            T.loaded = True
             
-            Tokens.AND =               Tokens.get_id('AND');
-            Tokens.ARRAY =             Tokens.get_id('ARRAY');
-            Tokens.ASTERISK =          Tokens.get_id('ASTERISK');
-            Tokens.BECOMES =           Tokens.get_id('BECOMES');
-            Tokens.BEGIN =             Tokens.get_id('BEGIN');
-            Tokens.COLON =             Tokens.get_id('COLON');
-            Tokens.COMMA =             Tokens.get_id('COMMA');
-            Tokens.CONST =             Tokens.get_id('CONST');
-            Tokens.DIV =               Tokens.get_id('DIV');
-            Tokens.DO =                Tokens.get_id('DO');
-            Tokens.DOUBLEDOT =         Tokens.get_id('DOUBLEDOT');
-            Tokens.ELSE =              Tokens.get_id('ELSE');
-            Tokens.END =               Tokens.get_id('END');
-            Tokens.ENDTEXT =           Tokens.get_id('ENDTEXT');
-            Tokens.EQUAL =             Tokens.get_id('EQUAL');
-            Tokens.GREATER =           Tokens.get_id('GREATER');
-            Tokens.ID =                Tokens.get_id('ID');
-            Tokens.IF =                Tokens.get_id('IF');
-            Tokens.LEFTBRACKET =       Tokens.get_id('LEFTBRACKET');
-            Tokens.LEFTPARENTHESIS =   Tokens.get_id('LEFTPARENTHESIS');
-            Tokens.LESS =              Tokens.get_id('LESS');
-            Tokens.MINUS =             Tokens.get_id('MINUS');
-            Tokens.MOD =               Tokens.get_id('MOD');            
-            Tokens.NOT =               Tokens.get_id('NOT');
-            Tokens.NOTEQUAL =          Tokens.get_id('NOTEQUAL');
-            Tokens.NOTGREATER =        Tokens.get_id('NOTGREATER');
-            Tokens.NOTLESS =           Tokens.get_id('NOTLESS');
-            Tokens.NUMERAL =           Tokens.get_id('NUMERAL');
-            Tokens.OF =                Tokens.get_id('OF');
-            Tokens.OR =                Tokens.get_id('OR');
-            Tokens.PERIOD =            Tokens.get_id('PERIOD'); 
-            Tokens.PLUS =              Tokens.get_id('PLUS');
-            Tokens.PROCEDURE =         Tokens.get_id('PROCEDURE'); 
-            Tokens.PROGRAM =           Tokens.get_id('PROGRAM');
-            Tokens.RECORD =            Tokens.get_id('RECORD');
-            Tokens.RIGHTBRACKET =      Tokens.get_id('RIGHTBRACKET');
-            Tokens.RIGHTPARENTHESIS =  Tokens.get_id('RIGHTPARENTHESIS');
-            Tokens.SEMICOLON =         Tokens.get_id('SEMICOLON'); 
-            Tokens.THEN =              Tokens.get_id('THEN'); 
-            Tokens.TYPE =              Tokens.get_id('TYPE');
-            Tokens.TOKEN_ERROR =       Tokens.get_id('TOKEN_ERROR');
-            Tokens.VAR =               Tokens.get_id('VAR');
-            Tokens.WHILE =             Tokens.get_id('WHILE');                
+            T.AND =               T.get_id('AND');
+            T.ARRAY =             T.get_id('ARRAY');
+            T.ASTERISK =          T.get_id('ASTERISK');
+            T.BECOMES =           T.get_id('BECOMES');
+            T.BEGIN =             T.get_id('BEGIN');
+            T.COLON =             T.get_id('COLON');
+            T.COMMA =             T.get_id('COMMA');
+            T.CONST =             T.get_id('CONST');
+            T.DIV =               T.get_id('DIV');
+            T.DO =                T.get_id('DO');
+            T.DOUBLEDOT =         T.get_id('DOUBLEDOT');
+            T.ELSE =              T.get_id('ELSE');
+            T.END =               T.get_id('END');
+            T.ENDTEXT =           T.get_id('ENDTEXT');
+            T.EQUAL =             T.get_id('EQUAL');
+            T.GREATER =           T.get_id('GREATER');
+            T.ID =                T.get_id('ID');
+            T.IF =                T.get_id('IF');
+            T.LEFTBRACKET =       T.get_id('LEFTBRACKET');
+            T.LEFTPARENTHESIS =   T.get_id('LEFTPARENTHESIS');
+            T.LESS =              T.get_id('LESS');
+            T.MINUS =             T.get_id('MINUS');
+            T.MOD =               T.get_id('MOD');            
+            T.NOT =               T.get_id('NOT');
+            T.NOTEQUAL =          T.get_id('NOTEQUAL');
+            T.NOTGREATER =        T.get_id('NOTGREATER');
+            T.NOTLESS =           T.get_id('NOTLESS');
+            T.NUMERAL =           T.get_id('NUMERAL');
+            T.OF =                T.get_id('OF');
+            T.OR =                T.get_id('OR');
+            T.PERIOD =            T.get_id('PERIOD'); 
+            T.PLUS =              T.get_id('PLUS');
+            T.PROCEDURE =         T.get_id('PROCEDURE'); 
+            T.PROGRAM =           T.get_id('PROGRAM');
+            T.RECORD =            T.get_id('RECORD');
+            T.RIGHTBRACKET =      T.get_id('RIGHTBRACKET');
+            T.RIGHTPARENTHESIS =  T.get_id('RIGHTPARENTHESIS');
+            T.SEMICOLON =         T.get_id('SEMICOLON'); 
+            T.THEN =              T.get_id('THEN'); 
+            T.TYPE =              T.get_id('TYPE');
+            T.TOKEN_ERROR =       T.get_id('TOKEN_ERROR');
+            T.VAR =               T.get_id('VAR');
+            T.WHILE =             T.get_id('WHILE');                
                        
         
 
     # Dada una cadena con el nombre de un token, devuelve su id
     @staticmethod
     def get_id(string):
-        Tokens.load()
+        T.load()
         upper = string.upper()
-        if upper in Tokens.name_to_id:
-            return Tokens.name_to_id[upper]
+        if upper in T.name_to_id:
+            return T.name_to_id[upper]
         else:
             return -1
         
@@ -143,8 +143,8 @@ class Tokens:
     # Dada una id de token, devuelve una cadena con su nombre
     @staticmethod
     def get_name(t_id):
-        Tokens.load()
-        if t_id in Tokens.id_to_name:
-            return Tokens.id_to_name[t_id]
+        T.load()
+        if t_id in T.id_to_name:
+            return T.id_to_name[t_id]
         else:
             return "NOT A TOKEN"
